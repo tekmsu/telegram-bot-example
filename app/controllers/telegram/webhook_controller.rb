@@ -21,7 +21,8 @@ class Telegram::WebhookController < Telegram::Bot::UpdatesController
     # do_smth_with(data)
 
     # There are `chat` & `from` shortcut methods.
-    response = from ? "Hello #{from['username']}!" : 'Hi there!'
+    response = 'Привет! Музей современного искусства «Гараж» запустил официального бота для Telegram!'
+    # response = from ? "Hello #{from['username']}!" : 'Hi there!'
     # There is `reply_with` helper to set basic fields
     # like `reply_to_message` & `chat_id`.
     reply_with :message, text: response
